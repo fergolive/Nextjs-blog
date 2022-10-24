@@ -51,9 +51,33 @@ export default function Layout({ children, title, description,home }){
           </>
         )}
       </header>
-            <navbar>Nav bar</navbar>
+            {/* <navbar>Nav bar</navbar> */}
+            <nav>
+              <Link href="/">
+                <a>Inicio | </a>
+              </Link>
+              <Link href="/blog">
+                <a>Blog | </a>
+              </Link>
+              <Link href="/contact">
+                <a>Contacto | </a>
+              </Link>
+              <Link href="/about">
+                <a>About </a>
+              </Link>
+            </nav>
             <main>  {children} </main>
-            <footer>footer</footer>
+        
+
+        {/* <footer></footer> */}
+            {!home && (
+        <div className={styles.backToHome}>
+          <Link href="/">
+            <a>← Back to home</a>
+          </Link>
+        </div>
+      )}
+
         </div>
     )
 }
