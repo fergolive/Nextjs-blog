@@ -21,7 +21,7 @@ export default function Layout({ children, title, description,home }){
           <>
             <Image
               priority
-              src="/img/1.jpg"
+              src="/img/fergolive.jpg"
               className={utilStyles.borderCircle}
               height={144}
               width={144}
@@ -35,7 +35,7 @@ export default function Layout({ children, title, description,home }){
               <a>
                 <Image
                   priority
-                  src="/img/1.jpg"
+                  src="/img/fergolive.jpg"
                   className={utilStyles.borderCircle}
                   height={108}
                   width={108}
@@ -83,6 +83,6 @@ export default function Layout({ children, title, description,home }){
 }
 
 Layout.defaultProps={
-    title:"Next.js | mi sitio web",
+    title:"Fergolive | my web site",
     description:"Descripcion de mi sitio web"
 }
